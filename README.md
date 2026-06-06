@@ -64,4 +64,10 @@ P4L, P3R, P2L
 
 ## 安装成 Skill
 
-把根目录的 `SKILL.md` 复制或软链接到你的 agent skills 目录即可。脚本在 `scripts/solve-lock.mjs`。
+可安装的 skill 包在：
+
+```text
+skill/gothic-lockpick-solver/
+```
+
+复制或软链接这个目录到你的 agent skills 目录即可。仓库根目录是 public README + CLI 示例，不是纯 skill 包。
