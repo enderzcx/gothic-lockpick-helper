@@ -68,3 +68,7 @@ Input JSON shape:
 - Missing row/column values: ask for the missing values unless the user explicitly asks for a safe assumption.
 - Non-Gothic puzzles: do not force this model onto a different lock system.
 - User reports an impossible route after using the inverse: ask them to re-check the coupling table instead of guessing.
+
+## References
+
+- Mobalytics Gothic 1 Remake lockpicking guide: https://mobalytics.gg/news/guides/gothic-1-remake-lockpicking-guide
