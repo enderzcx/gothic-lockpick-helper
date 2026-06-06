@@ -1,4 +1,4 @@
-# Gothic 开锁助手
+# gothic开锁助手
 
 中文说明在前。English: this repo contains a small deterministic solver for Gothic 1 Remake lockpicking puzzles.
 
