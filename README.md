@@ -104,7 +104,7 @@ P5 右移效果: (0,+1,-1,0,0)
 
 ## 运行
 
-需要 Node.js 18+。
+需要 Node.js 16+。
 
 ```bash
 node scripts/solve-lock.mjs examples/puzzle-5plates.json
@@ -157,13 +157,21 @@ L -> R
 
 ## 安装成 Skill
 
-可安装的 skill 包在：
+这个仓库根目录本身就是可安装的 skill 包：
 
 ```text
-skill/gothic-lockpick-solver/
+gothic-lockpick-solver/
+├── README.md
+├── SKILL.md
+├── scripts/
+└── examples/
 ```
 
-把这个目录复制或软链接到支持 `SKILL.md` 的 agent skills 目录即可。仓库根目录是 public README 和 CLI 示例，不是纯 skill 包。
+把整个 repo 复制或软链接到支持 `SKILL.md` 的 agent skills 目录即可。比如：
+
+```bash
+ln -sfn "$PWD" ~/.claude/skills/gothic-lockpick-solver
+```
 
 安装后，agent 收到这类输入时就能直接调用 solver：
 

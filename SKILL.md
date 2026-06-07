@@ -26,16 +26,16 @@ Class: `wrapper`. It wraps a deterministic BFS solver script and adds the game-s
    - left moves are the exact inverse.
 4. Ender's game input direction is reversed from the solver convention. By default, swap every solver `R` and `L` before replying.
 5. If the user explicitly asks for the raw mathematical solver direction, provide the unswapped solver sequence.
-6. For fresh puzzles, save the puzzle as JSON and run the bundled solver:
-
-```bash
-node "$CLAUDE_SKILL_DIR/scripts/solve-lock.mjs" /path/to/puzzle.json
-```
-
-If `CLAUDE_SKILL_DIR` is unavailable, run from this skill directory:
+6. For fresh puzzles, save the puzzle as JSON and run the bundled solver from the skill directory:
 
 ```bash
 node scripts/solve-lock.mjs /path/to/puzzle.json
+```
+
+If the host exposes a skill directory environment variable, that path is also fine. For Claude Code:
+
+```bash
+node "$CLAUDE_SKILL_DIR/scripts/solve-lock.mjs" /path/to/puzzle.json
 ```
 
 Input JSON shape:
